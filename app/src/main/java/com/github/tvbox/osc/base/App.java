@@ -51,10 +51,10 @@ public class App extends MultiDexApplication {
                 .setSupportSP(false)
                 .setSupportSubunits(Subunits.MM);
         PlayerHelper.init();
-        JSEngine.getInstance().create();
+        
         // Add Pyramid support
         PythonLoader.getInstance().setApplication(this);
-        
+        JSEngine.getInstance().create();
         FileUtils.cleanPlayerCache();
     }
 
