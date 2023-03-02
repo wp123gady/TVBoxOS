@@ -201,9 +201,7 @@
 -keep class com.github.catvod.crawler.*{*;}
 # 迅雷下载模块
 -keep class com.xunlei.downloadlib.** {*;}
-# quickjs引擎
--keep class com.github.tvbox.quickjs.** {*;}
-# 支持影视的ali相关的jar
+
 -keep class com.google.gson.**{*;}
 
 # support python
@@ -211,3 +209,7 @@
 -dontwarn com.undcover.freedom.pyramid.**
 -keep public class com.chaquo.python.** { *; }
 -dontwarn com.chaquo.python.**
+# quickjs引擎
+-keep class com.github.tvbox.quickjs.** {*;}
+# 支持影视的ali相关的jar
+-keep class com.google.gson.**{*;}
