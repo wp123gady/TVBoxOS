@@ -202,8 +202,6 @@
 # 迅雷下载模块
 -keep class com.xunlei.downloadlib.** {*;}
 
--keep class com.google.gson.**{*;}
-
 # support python
 -keep public class com.undcover.freedom.pyramid.** { *; }
 -dontwarn com.undcover.freedom.pyramid.**
