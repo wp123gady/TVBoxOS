@@ -305,7 +305,8 @@ public class ApiConfig {
 
     private void parseJson(String apiUrl, String jsonStr) {
         // pyramid
-	    PythonLoader.getInstance().setConfig(jsonStr);
+	PythonLoader.getInstance().setConfig(jsonStr);
+        
         JsonObject infoJson = new Gson().fromJson(jsonStr, JsonObject.class);
         // spider
         spider = DefaultConfig.safeJsonString(infoJson, "spider", "");
