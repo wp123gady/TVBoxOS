@@ -589,7 +589,7 @@ public class ApiConfig {
 
     public Object[] proxyLocal(Map param) {
     
-    // Getting pyramid api
+        // Getting pyramid api
         try {
             if (param.containsKey("api")) {
                 String doStr = param.get("do").toString();
